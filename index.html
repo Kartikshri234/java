@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>project-1 based  on operator</h1>
+    <form>
+        number1: <input id="d1" type="text"><br><br>
+        number2: <input id="d2" type="text"><br><br>
+        <button type="button" onclick="addbtn()">+</button>
+        <button type="button" onclick="subbtn()">-</button>
+        <button type="button" onclick="mulbtn()">*</button>
+        <button type="button" onclick="divbtn()">/</button>
+        <button type="button" onclick="modbtn()">%</button><br><br>
+        result: <input id="res" type="text"><br><br>
+        <script>
+            function addbtn(){
+            let n1=Number(document.getElementById("d1").value)
+            let n2=Number(document.getElementById("d2").value)
+            let add=n1+n2
+            document.getElementById("res").value=add
+            document.getElementById("d1").value=""
+            document.getElementById("d2").value=""
+            }
+            function subbtn(){
+            let n1=Number(document.getElementById("d1").value)
+            let n2=Number(document.getElementById("d2").value)
+            let sub=n1-n2
+            document.getElementById("res").value=sub
+            document.getElementById("d1").value=""
+            document.getElementById("d2").value=""
+            }
+            function mulbtn(){
+            let n1=Number(document.getElementById("d1").value)
+            let n2=Number(document.getElementById("d2").value)
+            let mul=n1*n2
+            document.getElementById("res").value=mul
+            document.getElementById("d1").value=""
+            document.getElementById("d2").value=""
+            }
+            function divbtn(){
+            let n1=Number(document.getElementById("d1").value)
+            let n2=Number(document.getElementById("d2").value)
+            let div=n1/n2
+            document.getElementById("res").value=div
+            document.getElementById("d1").value=""  
+            document.getElementById("d2").value=""
+            }
+            function modbtn(){
+            let n1=Number(document.getElementById("d1").value)  
+            let n2=Number(document.getElementById("d2").value)
+            let mod=n1%n2
+            document.getElementById("res").value=mod
+            document.getElementById("d1").value=""
+            document.getElementById("d2").value=""
+            }
+        </script>
+    </form>
+</body>
+</html>
